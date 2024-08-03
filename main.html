@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather forecast</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet"> 
+</head>
+<body>
+    <div id="main" class="main">
+<h1>WEATHER FORECAST APP</h1><br>
+<i class="fa-solid fa-magnifying-glass icon"></i>
+<p><input type="text" id="cityInput" placeholder="Enter the location "><button id="searchBtn">Search</button></p>
+<p> Allow access to your current location</p>
+<button id="allowBtn">Allow</button> <button id="denyBtn">Deny</button> 
+<div id="currentWeather" class="current">
+
+</div>
+</div>
+ <div class="chart"> 
+    <canvas id="temperatureChart" width="500" height="300">Temperature Chart</canvas> 
+    <canvas id="humidityChart" width="500" height="300" >Humidity Chart</canvas> 
+    <canvas id="windSpeedChart" width="500" height="300">Windspeed Chart</canvas> 
+</div> 
+<script src="https://cdn.jsdelivr.net/npm/chart.js "></script>
+<script src="java.js"></script>
+</body>
+</html>
